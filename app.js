@@ -18,8 +18,8 @@ app.get("/",(req,res)=>{
 // app.use(express.json());
 //db config
 //api endpoints
-// import routes from "./routes/v1/route.js";
-// app.use("/routes/api/v1", routes);
+import routes from "./routes/v1/route.js";
+app.use("/routes/api/v1", routes);
 
 //listener
 app.listen(PORT, () => console.log(`server running at port ${PORT}`));
